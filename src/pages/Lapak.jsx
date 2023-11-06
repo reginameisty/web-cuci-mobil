@@ -1,23 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import {semuaLapak} from "../data/index";
-import {useState, useEffect} from 'react';
+// import {useState, useEffect} from 'react';
 
-function Lapak(){
-  const [lapak, setLapak] = useState([])
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const result = await fetch('http://192.168.1.14:8000/lapak/')
-      const jsonResult = await result.json()
-
-      setLapak(jsonResult)
-    }
-
-    fetchData()
-  }, [])
-
-  const submitLapak = async () =>{
-  }
 
   const Lapak = () => {
     return (
